@@ -1,0 +1,44 @@
+{
+  "name": "website-to-desktop",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "mobrowser dev",
+    "dev:build": "mobrowser dev:build",
+    "build": "mobrowser build",
+    "pack": "mobrowser pack",
+    "test": "mobrowser test:e2e",
+    "test:e2e": "mobrowser test:e2e",
+    "gen": "mobrowser gen",
+    "add": "mobrowser add",
+    "sbom": "mobrowser sbom",
+    "mobrowser": "mobrowser",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mobrowser/api": "2.18.0",
+    "@mobrowser/cli": "2.18.0",
+    "@bufbuild/protobuf": "^2.10.2"
+  },
+  "optionalDependencies": {
+    "@mobrowser/sdk-darwin-arm64": "2.18.0",
+    "@mobrowser/sdk-darwin-x64": "2.18.0",
+    "@mobrowser/sdk-linux-x64": "2.18.0",
+    "@mobrowser/sdk-win-x64": "2.18.0"
+  },
+  "allowScripts": {
+    "@mobrowser/sdk-darwin-arm64@2.18.0": true,
+    "@mobrowser/sdk-darwin-x64@2.18.0": true,
+    "fsevents@2.3.3": true
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^20.11.5",
+    "typescript": "^5.8.3",
+    "vite": "^8.0.0"
+  },
+  "engines": {
+    "node": "^20.20.2 || ^22.22.2 || >=24.14.1"
+  }
+}
